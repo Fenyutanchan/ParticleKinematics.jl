@@ -1,4 +1,4 @@
-name = "FytcKinematics"
+name = "ParticleKinematics"
 uuid = "c96397ac-f054-4594-a554-d78dfd9ae88e"
 authors = ["Quan-feng WU <wuquanfeng@ihep.ac.cn>"]
 version = "0.1.0"

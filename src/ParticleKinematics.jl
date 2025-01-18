@@ -3,7 +3,7 @@
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
-module FytcKinematics
+module ParticleKinematics
 
 using Dates
 using LinearAlgebra
@@ -29,4 +29,4 @@ include("random_seed.jl")
 include("single.jl")
 include("utilities.jl")
 
-end # module FytcKinematics
+end # module ParticleKinematics
