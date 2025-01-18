@@ -3,7 +3,7 @@
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
-using FytcKinematics
+using ParticleKinematics
 using ProgressMeter
 using Test
 
@@ -50,9 +50,9 @@ end
         @info "M: $M, m_list: $m_list"
         ρn, pi_list = phase_space_point_Monte_Carlo(P, m_list)
         # @show P - sum(pi_list)
-        # @show FytcKinematics.mass.(pi_list) - m_list
+        # @show ParticleKinematics.mass.(pi_list) - m_list
         @test sum(pi_list) ≈ P
-        @test FytcKinematics.mass.(pi_list) ≈ m_list rtol=1e-6
+        @test ParticleKinematics.mass.(pi_list) ≈ m_list rtol=1e-6
     end
 end
 
